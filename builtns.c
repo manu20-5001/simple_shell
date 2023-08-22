@@ -5,7 +5,7 @@ void set_alias(char *var_name, char *value);
 void print_alias(alias_t *alias);
 
 /**
- * shellby_alias - builtinn command prints aliases
+ * shellby_alias - builtinn command aliases are printed
  * @args: argument array
  * @front: pointer double
  *
