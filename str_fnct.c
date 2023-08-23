@@ -6,8 +6,8 @@ char *_strcat(char *dest, const char *src);
 char *_strncat(char *dest, const char *src, size_t n);
 
 /**
- * _strlen - length of string
- * @s: pointer to characters string
+ * _strlen - length of the string
+ * @s: pointer to a string of characters.
  *
  * Return: length of character
  */
@@ -23,8 +23,8 @@ int _strlen(const char *s)
 }
 
 /**
- * _strcpy - Copies string pointed to src
- * @dest: Pointer to destination of copied string
+ * _strcpy -  function that copies the string pointed to by src.
+ * @dest: pointer to the destination where the string is copied.
  * @src: Pointer to src of the source string.
  *
  * Return: Pointer to dest.
@@ -40,9 +40,9 @@ char *_strcpy(char *dest, const char *src)
 }
 
 /**
- * _strcat - strings concatenates
- * @dest:  destination string
- * @src: source string
+ * _strcat - function for concatenating strings.
+ * @dest:  destination of string
+ * @src: sources of the string
  *
  * Return: destination string
  */
@@ -64,9 +64,9 @@ char *_strcat(char *dest, const char *src)
 }
 
 /**
- * _strncat - strings concatenates
- * @dest: destination string
- * @src:source string
+ * _strncat - concatenating strings with a specified maximum length.
+ * @dest: destination of string
+ * @src:source of string
  * @n: n bytes to copy src
  *
  * Return: to destination string
