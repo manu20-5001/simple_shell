@@ -21,9 +21,9 @@ char *name;
 /* Global counter*/
 int hist;
 /**
- * struct list_s - new struct type defining linked list
+ * struct list_s - new struct type definition for a linked list.
  * @dir: directory
- * @next: pointer to another struct list_s.
+ * @next:  pointer to another struct of type list_s.
  */
 typedef struct list_s
 {
@@ -32,9 +32,9 @@ typedef struct list_s
 } list_t;
 
 /**
- * struct builtin_s - struct type defining builtin commands
- * @name: name of the builtin command
- * @f: function pointer to builtin command's function
+ * struct builtin_s - A struct type used to define built-in commands
+ * @name: name of the built-in command
+ * @f: pointer that points to the function associated with the built-in command.
  */
 typedef struct builtin_s
 {
@@ -43,10 +43,10 @@ typedef struct builtin_s
 } builtin_t;
 
 /**
- * struct alias_s - new struct defining aliases
- * @name: name of the alias
+ * struct alias_s - new struct that defines aliases
+ * @name: alias name
  * @value: value of alias
- * @next: pointer to another struct alias_s
+ * @next: pointer to another struct of type alias_s.
  */
 typedef struct alias_s
 {

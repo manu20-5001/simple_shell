@@ -4,8 +4,8 @@ char *error_126(char **args);
 char *error_127(char **args);
 
 /**
- * error_126 - error message for permission denied failures creator.
- * @args: arguments array passed to the command.
+ * error_126 - Creates error message for permission denied failures .
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */
@@ -38,8 +38,8 @@ char *error_126(char **args)
 }
 
 /**
- * error_127 - error message for command not found failures creator.
- * @args: arguments array passed to the command.
+ * error_127 - Creates error message for command not found .
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */

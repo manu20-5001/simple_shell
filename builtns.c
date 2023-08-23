@@ -5,8 +5,8 @@ void set_alias(char *var_name, char *value);
 void print_alias(alias_t *alias);
 
 /**
- * shellby_alias - builtinn command prints aliases
- * @args: argument array
+ * shellby_alias - builtinn command aliases are printed
+ * @args: an array of input values.
  * @front: pointer double
  *
  * Return: error occurs - 1, Otherwise - 0.
@@ -51,9 +51,9 @@ int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 }
 
 /**
- * set_alias - set existing alias with new value
- * @var_name: alias
- * @value: Value alias
+ * set_alias - Update an existing alias with a new value.
+ * @variable name: alias.
+ * @value: alias value.
  */
 void set_alias(char *var_name, char *value)
 {
@@ -88,8 +88,8 @@ void set_alias(char *var_name, char *value)
 }
 
 /**
- * print_alias - Prints format name = 'value'
- * @alias: alias pointer
+ * print_alias -  function to display the format as 'name = value'
+ * @alias:pointer alias
  */
 void print_alias(alias_t *alias)
 {
@@ -108,8 +108,8 @@ void print_alias(alias_t *alias)
 	free(alias_string);
 }
 /**
- * replace_aliases - replace any matching alias
- * @args: argument 2D pointer
+ * replace_aliases - swap out any matching aliases.
+ * @args: Pointer to a 2D array of values.
  *
  * Return: arguments 2D pointer
  */

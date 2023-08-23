@@ -6,8 +6,8 @@ char *error_2_exit(char **args);
 char *error_2_cd(char **args);
 char *error_2_syntax(char **args);
 /**
- * error_env - error message for shellby_env errors creator.
- * @args: arguments array passed to the command.
+ * error_env - creats error messages when things go wrong with shellby_env.
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */
@@ -41,8 +41,8 @@ char *error_env(char **args)
 }
 
 /**
- * error_1 - error message for shellby_alias errors creator.
- * @args: arguments array passed to the command.
+ * error_1 - creats error messages for shellby_alias. 
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */
@@ -64,8 +64,8 @@ char *error_1(char **args)
 }
 
 /**
- * error_2_exit - error message for shellby_exit errors creator.
- * @args: arguments array passed to the command.
+ * error_2_exit - generating error messages for shellby_exit. 
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */
@@ -98,8 +98,8 @@ char *error_2_exit(char **args)
 }
 
 /**
- * error_2_cd - error message for shellby_cd errors creator.
- * @args: arguments array passed to the command.
+ * error_2_cd -  Creates error message for shellby_cd errors .
+ * @args: array of arguments passed to the command.
  *
  * Return: string error.
  */
@@ -137,8 +137,8 @@ char *error_2_cd(char **args)
 }
 
 /**
- * error_2_syntax - error message for syntax errors creator.
- * @args: arguments array passed to the command.
+ * error_2_syntax - Creates error message for syntax errors .
+ * @args: array o arguments passed to the command.
  *
  * Return: string error.
  */

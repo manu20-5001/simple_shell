@@ -5,11 +5,11 @@ int count_tokens(char *str, char *delim);
 char **_strtok(char *line, char *delim);
 
 /**
- * token_len - Locates the delimiter index
- * @str: searched string.
- * @delim:character delimiter .
+ * token_len - helps you find the index of the delimiter.
+ * @str: represents the string you're searching within.
+ * @delim:character that acts as a delimiter .
  *
- * Return: The delimiter index marking of the end
+ * Return: The index indicating the end of the delimiter
  */
 int token_len(char *str, char *delim)
 {
@@ -25,11 +25,11 @@ int token_len(char *str, char *delim)
 }
 
 /**
- * count_tokens - Counts the number of delimited
- * @str: searched string.
+ * count_tokens - Calculates the number of delimited.
+ * @str: working or searched string.
  * @delim: character delimiter.
  *
- * Return: words number contained within str.
+ * Return: the count of words found within the 'str'
  */
 int count_tokens(char *str, char *delim)
 {
@@ -51,11 +51,11 @@ int count_tokens(char *str, char *delim)
 }
 
 /**
- * _strtok - string Tokenizer .
+ * _strtok - spliting or tokenizing strings.
  * @line: string.
- * @delim: The character delimiter to tokenize the string.
+ * @delim: The character delimiter to split the string.
  *
- * Return: A pointer to an array.
+ * Return: A reference to an array.
  */
 char **_strtok(char *line, char *delim)
 {

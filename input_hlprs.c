@@ -7,9 +7,9 @@ int handle_args(int *exe_ret);
 int check_args(char **args);
 
 /**
- * get_args - command getter standard input
- * @line: store buffer command
- * @exe_ret: return value last command
+ * get_args -  retrieves command arguments from standard input.
+ * @line: A buffer for storing command lines.
+ * @exe_ret: return value of the most recent command.
  *
  * Return: error occurs - NULL. Otherwise - pointer to the stored command.
  */
@@ -41,10 +41,10 @@ char *get_args(char *line, int *exe_ret)
 }
 
 /**
- * call_args - operators Partitions
+ * call_args - divides operators.
  * @args: arguments
- * @front: pointer double beginning of args
- * @exe_ret: parent return value last command.
+ * @front: A double pointer indicating the start of the arguments
+ * @exe_ret: return value of the last command executed by the parent process.
  *
  * Return: last command.
  */
@@ -99,9 +99,9 @@ int call_args(char **args, char **front, int *exe_ret)
 }
 
 /**
- * run_args - execution command.
- * @args: arguments array
- * @front: beginning double pointer
+ * run_args - Running a command.
+ * @args: array of arguments 
+ * @front: double pointer pointing to the beginning.
  * @exe_ret: last command
  *
  * Return: last command.
@@ -134,8 +134,8 @@ int run_args(char **args, char **front, int *exe_ret)
 }
 
 /**
- * handle_args -  execution of command.
- * @exe_ret: value of the parent process last command
+ * handle_args -  proccessing of command.
+ * @exe_ret:  return value of the last command executed by the parent process
  *
  * Return: If an end-of-file is read - END_OF_FILE (-2).
  */
@@ -181,7 +181,7 @@ int handle_args(int *exe_ret)
 /**
  * check_args - Verify if there are any leading instances of
  * ';', ';;', '&&', or '||'.
- * @args: tokenized 2D pointer command arguments.
+ * @args: 2D pointer containing tokenized command arguments.
  *
  * Return: return 2.
  *	   Otherwise - 0.
