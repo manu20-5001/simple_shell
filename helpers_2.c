@@ -5,9 +5,9 @@ ssize_t get_new_len(char *line);
 void logical_ops(char *line, ssize_t *new_len);
 
 /**
- * handle_line - line Partitions from standard input
- * @line: line pointer read from standard input
- * @read: line length
+ * handle_line - Splits input from standard input into segments.
+ * @line: line pointer that reads input from standard input.
+ * @read: length of a line 
  */
 void handle_line(char **line, ssize_t read)
 {
@@ -95,9 +95,9 @@ void handle_line(char **line, ssize_t read)
 /**
  * get_new_len -Determine the updated length of a line divi
  *              by ";", "||", "&&&", or "#".
- * @line: check line
+ * @line: line of text to be checked.
  *
- * Return: line length
+ * Return: length of a line 
  */
 
 ssize_t get_new_len(char *line)
@@ -152,9 +152,9 @@ ssize_t get_new_len(char *line)
 	return (new_len);
 }
 /**
- * logical_ops - line checker for logical operators
- * @line: Provide a pointer to the character that needs to be checked in the l
- * @new_len: new_len Pointer
+ * logical_ops - A function that examines lines for logical operators.
+ * @line: Provide a pointer to the character that needs to be checked in the line
+ * @new_len: A pointer to the new length.
  */
 void logical_ops(char *line, ssize_t *new_len)
 {
