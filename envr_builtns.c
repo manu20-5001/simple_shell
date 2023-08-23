@@ -5,12 +5,12 @@ int shellby_setenv(char **args, char __attribute__((__unused__)) **front);
 int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
 
 /**
- * shellby_env - current environment printer.
- * @args: arguments arrays passed to the shell.
+ * shellby_env - tool that shows you your current environment.
+ * @args: arrays of arguments that get passed to the shell.
  * @front: double pointer to beginning of args.
  *
- * Return: an error occurs = -1.
- *	   O/w= 0.
+ * Return: In case of an error, it returns -1
+ *	   Otherwise= 0.
  *
  */
 int shellby_env(char **args, char __attribute__((__unused__)) **front)
@@ -32,12 +32,12 @@ int shellby_env(char **args, char __attribute__((__unused__)) **front)
 }
 
 /**
- * shellby_setenv - environmental variable are added to the PATH.
- * @args: arguments arrays passed the shell.
+ * shellby_setenv - adding environmental variables to the PATH.
+ * @args: arrays of arguments passed the shell.
  * @front: A double pointer to beginning of args.
  *
  * Return: when an error occurs = -1.
- *         o/w = 0.
+ *         otherwise = 0.
  */
 int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 {
@@ -84,11 +84,11 @@ int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 }
 
 /**
- * shellby_unsetenv - environmental variable are deleted from the PATH.
- * @args: arguments arrays passed to shell.
+ * shellby_unsetenv - to remove environmental variables from the PATH.
+ * @args: arrays of arguments passed to shell.
  * @front: double pointer to beginning of args.
  * Return: error occurs = -1.
- *         O/w - 0.
+ *         Otherwise = 0.
  */
 int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front)
 {
