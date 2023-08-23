@@ -6,9 +6,9 @@ char *get_env_value(char *beginning, int len);
 void variable_replacement(char **args, int *exe_ret);
 
 /**
- * free_args - memory free taken by arguments
- * @args: null-terminated double pointer
- * @front: pointer double
+ * free_args - releases the memory occupied by the arguments.
+ * @args: null-A double pointer that is null-terminated.
+ * @front:  A double pointer
  */
 void free_args(char **args, char **front)
 {
@@ -21,9 +21,9 @@ void free_args(char **args, char **front)
 }
 
 /**
- * get_pid - ID current process
+ * get_pid - Retrieves ID current process
  *
- * Return: ID current process or NULL failed.
+ * Return: The ID of the current process or NULL if the operation fails.
  */
 char *get_pid(void)
 {
@@ -53,11 +53,11 @@ char *get_pid(void)
 }
 
 /**
- * get_env_value - an environmental variable
- * @beginning: Specify the environmental variable to be queried.
- * @len: Indicate the length of the environmental variable to be searched.
+ * get_env_value - retrieve an environmental variable
+ * @beginning: environmental variable you want to inquire about
+ * @len:  length of the environmental variable to be searched.
  *
- * Return: return an empty string. Otherwise, return value environmental varia
+ * Return: return an empty string. Otherwise, return value environmental variable
  *
  * Description: format VARIABLE=VALUE.
  */
@@ -89,9 +89,9 @@ char *get_env_value(char *beginning, int len)
 }
 
 /**
- * variable_replacement - replacementHandles variable
- * @line: command double pointer and arguments.
- * @exe_ret: A pointer to the return value of the last executed command.
+ * variable_replacement -  Manages variable replacements.
+ * @line: A double pointer containing the command and its arguments.
+ * @exe_ret: A pointer to the  return value of the most recent command that was executed.
  *
  */
 void variable_replacement(char **line, int *exe_ret)
